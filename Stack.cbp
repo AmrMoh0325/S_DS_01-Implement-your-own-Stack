@@ -31,22 +31,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="Data_Types.h" />
-		<Unit filename="TestCases.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="TestCases.h" />
-		<Unit filename="linked_list.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="linked_list.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="stack.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="stack.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

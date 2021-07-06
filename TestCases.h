@@ -1,11 +1,3 @@
-/*****************************************************************************
-* Task: Stack
-* File Name: TestCases.h
-* Description: header file for the TestCases.c
-* Author: Amr Mohamed
-* Date: 4/7/2021
-******************************************************************************/
-
 #ifndef TESTCASES_H_
 #define TESTCASES_H_
 

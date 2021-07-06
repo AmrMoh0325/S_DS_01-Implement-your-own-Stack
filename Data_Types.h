@@ -1,10 +1,4 @@
-/*****************************************************************************
-* Task: Stack
-* File Name: Data_Types.h
-* Description: header file for the data type definitions
-* Author: Amr Mohamed
-* Date: 4/7/2021
-******************************************************************************/
+
 
 #ifndef DATA_TYPES_H_
 #define DATA_TYPES_H_
@@ -26,8 +20,8 @@ struct node_t *Previous;
 struct node_t *Next;
 int value;
 };
-typedef struct node_t       node_t;
 
+typedef struct node_t       node_t;
 
 
 typedef struct{
@@ -48,6 +42,3 @@ int max_size;
 
 
 #endif // DATA_TYPES_H_
-
-
-

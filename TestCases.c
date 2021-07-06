@@ -1,13 +1,3 @@
-/*****************************************************************************
-* Task: Stack
-* File Name: TestCases.c
-* Description: library file for the testing functions
-* Author: Amr Mohamed
-* Date: 4/7/2021
-******************************************************************************/
-
-
-
 #include "TestCases.h"
 void test_list_Add_Remove_nodes(void)
 {
@@ -56,15 +46,15 @@ void test_stack(void)
 
     stack_t *s1=create_stack(5);
     printf("print empty stack:\n\n");
-    print_stack(s1);
+    printStack(s1);
     printf("\n=============================================\n");
 
     sint32_t x;
     printf("pop empty stack:\n\n");
-    pop_flag=pop_stack(s1,&x);
+    pop_flag=pull(s1,&x);
     if (pop_flag)       printf("popped value= %d",x);
     else                printf("popped value= invalid");
-    print_stack(s1);
+    printStack(s1);
     printf("\n=============================================\n");
 
 
@@ -73,20 +63,20 @@ void test_stack(void)
     printf("pushing to stack and pushing to full stack:\n\n");
     for (int i=0;i<6;i++)
     {
-        push_flag=push_stack(s1,i);
+        push_flag=push(s1,i);
         printf("\n\n%s",((push_flag)? "push successful":"push fail"));
 
-        print_stack(s1);
+        printStack(s1);
     }
     printf("\n=============================================\n");
 
     printf("popping stack and popping empty stack:\n\n");
     for (int i=0;i<6;i++)
     {
-        pop_flag=pop_stack(s1,&x);
+        pop_flag=pull(s1,&x);
         if (pop_flag)       printf("popped value= %d",x);
         else                printf("popped value= invalid");
-        print_stack(s1);
+        printStack(s1);
     }
     printf("\n=============================================\n");
     return 0;
